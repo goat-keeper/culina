@@ -16,3 +16,5 @@ supabaseAnonKey,
  }   
 }
 )
+console.log("Supabase URL:", supabaseUrl);
+console.log("Supabase Key Exists:", !!supabaseAnonKey);

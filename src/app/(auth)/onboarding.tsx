@@ -136,8 +136,12 @@ export default function Onboarding() {
 
                 <View style={styles.avatarSection}>
                   {profileImage ? (
+                    <View>
                     <Image source={{ uri: profileImage }} style={styles.avatarCircle} />
+                    <Text onPress={showImagePicker} style={styles.uploadText}>Change image</Text>
+                    </View>
                   ) : (
+                    <View>
                     <TouchableOpacity style={styles.avatarCircle}
                     onPress={showImagePicker}
                     >
@@ -146,8 +150,9 @@ export default function Onboarding() {
                             <Ionicons name="add" size={12} color="#4A2E1C" />
                         </View>
                     </TouchableOpacity>
-                  )}
                     <Text style={styles.uploadText}>Upload Photo</Text>
+                    </View>
+                  )}
                 </View>
 
                 <View style={styles.form}>

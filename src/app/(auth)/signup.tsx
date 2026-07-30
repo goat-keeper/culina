@@ -26,7 +26,21 @@ export default function Signup() {
       setLoading(false)
     }
   }
+// const handleSignup = async () => {
+//   try {
+//     const { supabase } = await import("@/lib/supabase/client");
 
+//     const { data, error } = await supabase.auth.signUp({
+//       email: "test123@gmail.com",
+//       password: "Password@123",
+//     });
+
+//     console.log("DATA:", data);
+//     console.log("ERROR:", error);
+//   } catch (e) {
+//     console.log("CATCH:", e);
+//   }
+// };
   return (
     <SafeAreaView style={styles.safeArea}>
       <KeyboardAvoidingView
