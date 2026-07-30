@@ -9,7 +9,7 @@ export default function RootLayout() {
     if (isAuth) {
       router.replace("/");
     } else {
-      router.replace("/login");
+      router.replace("/(auth)/onboarding");
     }
   }, [isAuth, router]);
 
